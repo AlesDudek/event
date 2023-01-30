@@ -179,23 +179,77 @@ body {
 }
 
 .sectionLink .sectionLink-Program ul {
-  margin-top: 48px;
+  list-style: none;
 }
 
 .sectionLink .sectionLink-Program ul .ul--li {
-  color: #262626;
+  color: #CC9933;
   margin-top: 48px;
   font-size: 36px;
+}
+
+.sectionLink .sectionLink-Program ul .ul--li .ul__li--dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionLink .sectionLink-Program ul .ul--li .ul__li--dot .dot {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.sectionLink .sectionLink-Program ul .ul--li .ul__li--dot h4 {
+  font-size: 36px;
+  font-weight: bold;
   color: #262626;
+}
+
+.sectionLink .sectionLink-Program ul .ul--li .ul__li--line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionLink .sectionLink-Program ul .ul--li .ul__li--line .line {
+  margin-top: 17px;
+  margin-left: 8px;
+  margin-right: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1px;
+  height: 64px;
 }
 
 .sectionLink .sectionLink-Program ul .ul--li .ul__li--li {
   margin-top: 20px;
   font-size: 24px;
+  color: #262626;
 }
 
 .sectionLink .sectionLink-Program ul .ul--li .ul__li--li img {
   width: 24px;
+  color: #262626;
+}
+
+.sectionLink .sectionLink-Program ul .ul__li--last {
+  margin-bottom: 139px;
 }
 
 .section--tickets {
@@ -256,15 +310,12 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 1154px) {
+@media (max-width: 1165px) {
   .sectionLink .sectionLink-Program h2 {
-    font-size: 34px;
+    font-size: 32px;
   }
-  .sectionLink .sectionLink-Program ul .ul--li {
-    font-size: 18px;
-  }
-  .sectionLink .sectionLink-Program ul .ul--li .ul__li--li {
-    font-size: 12px;
+  .sectionLink .sectionLink-Program ul .ul--li .ul__li--dot h4 {
+    font-size: 25px;
   }
   .section--tickets h2 {
     font-size: 32px;

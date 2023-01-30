@@ -129,20 +129,51 @@ body{
       font-size: 64px;
     }
     ul{
-      margin-top: 48px;
+      list-style: none;
       .ul--li{
-        color: $black;
+        color: $yellow;
         margin-top: 48px;
         font-size: 36px;
-        color: $black;
+        .ul__li--dot{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .dot{
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+          }
+          h4{
+            font-size: 36px;
+            font-weight: bold;
+            color: $black;
+          }
+        }
+        .ul__li--line{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .line{
+            margin-top: 17px;
+            margin-left: 8px;
+            margin-right: 35px;
+            align-items: center;
+            width: 1px;
+            height: 64px;
+          }
+        }
         .ul__li--li{
           margin-top: 20px;
           font-size: 24px;
-
+          color: $black;
           img{
             width: 24px;
+            color: $black;
           }
         }
+      }
+      .ul__li--last{
+        margin-bottom: 139px;
       }
     }
   }
@@ -196,17 +227,18 @@ body{
     cursor: pointer;
   }
 }
-@media (max-width:1154px) {
+@media (max-width:1165px) {
   .sectionLink{
     .sectionLink-Program{
       h2{
-        font-size: 34px;
+        font-size: 32px;
       }
       ul{
         .ul--li{
-          font-size: 18px;
-          .ul__li--li{
-            font-size: 12px;
+          .ul__li--dot{
+            h4{
+              font-size: 25px;
+            }
           }
         }
       }
