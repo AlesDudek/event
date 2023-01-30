@@ -12,7 +12,7 @@ body{
 //************ header ********//
 .headerNav{
   height: 600px;
-  background: url(../img/eventimg.png);
+  background: radial-gradient(rgba(40, 38, 38, 0.332),rgb(38, 37, 37)),url(../img/eventimg.png);
   background: cover;
   background-repeat: no-repeat;
   .haederUP{
@@ -79,6 +79,7 @@ body{
     }
     margin-bottom: 177px;
   }
+  
 }
 //*********** section***********//
 .sectionIformation{
@@ -167,6 +168,11 @@ body{
     height: 18px;
     margin-top: 30px;
     display: flex;
+  }
+  .section__tickets--lable{
+    span{
+      border-bottom: 1px solid $blackBottom;
+    }
   }
   .section__tickets--button{
     margin-top: 16px;

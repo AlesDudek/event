@@ -13,7 +13,7 @@ body {
 
 .headerNav {
   height: 600px;
-  background: url(../img/eventimg.png);
+  background: radial-gradient(rgba(40, 38, 38, 0.332), #262525), url(../img/eventimg.png);
   background: cover;
   background-repeat: no-repeat;
 }
@@ -223,6 +223,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.section--tickets .section__tickets--lable span {
+  border-bottom: 1px solid #000;
 }
 
 .section--tickets .section__tickets--button {
