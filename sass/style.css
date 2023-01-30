@@ -58,6 +58,10 @@ body {
   margin-right: 8px;
 }
 
+.headerNav .haederUP .buttonHaederUP:hover {
+  cursor: pointer;
+}
+
 .headerNav .HeaderSection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,6 +109,10 @@ body {
 .headerNav .headerBottonBotton img {
   width: 24px;
   margin-right: 8px;
+}
+
+.headerNav .headerBottonBotton:hover {
+  cursor: pointer;
 }
 
 .sectionIformation {
@@ -225,6 +233,10 @@ body {
   display: flex;
 }
 
+.section--tickets .section__tickets--checkbox:hover {
+  cursor: pointer;
+}
+
 .section--tickets .section__tickets--lable span {
   border-bottom: 1px solid #000;
 }
@@ -235,6 +247,11 @@ body {
   height: 48px;
   background-color: #3F51F6;
   color: #fff;
+  border: none;
+}
+
+.section--tickets .section__tickets--button:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1154px) {
