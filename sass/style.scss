@@ -89,6 +89,7 @@ body{
   justify-content: space-between;
   article{
     max-width: 298.73px;
+    font-size: 16px;
     h2{
       color: $yellow;
       font-size: 64px;
@@ -104,6 +105,7 @@ body{
     margin-right: 160px;
   }
 }
+//***** section LINK *****/
 .sectionLink{
   display: flex;
   justify-content: space-between;
@@ -137,6 +139,8 @@ body{
     }
   }
 }
+//**** section Tickets ***/
+
 .section--tickets{
   margin-right: 160px;
   margin-top: 122px;
@@ -170,5 +174,127 @@ body{
     height: 48px;
     background-color: $buttonPri;
     color: $white;
+  }
+}
+@media (max-width:1154px) {
+  .sectionLink{
+    .sectionLink-Program{
+      h2{
+        font-size: 34px;
+      }
+      ul{
+        .ul--li{
+          font-size: 18px;
+          .ul__li--li{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .section--tickets{
+    h2{
+      font-size: 32px;
+    }
+  }
+}
+@media (max-width:986px) {
+  .sectionIformation{
+    display: flex;
+    flex-direction: column;
+    .section__article-one{
+      margin-left: 0px;
+    }
+    .section__article-three{
+      margin-right: 0px;
+    }
+  }
+  .sectionLink{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .sectionLink-Program{
+      margin-left: 0px;
+      margin-top: 61px;
+      h2{
+        font-size: 64px;
+      }
+      ul{
+        margin-top: 24px;
+        .ul--li{
+          font-size: 36px;
+        }
+      }
+    }
+  }
+  .section--tickets{
+    margin-right: 0px;
+    h2{
+      font-size: 64px;
+    }
+  }
+}
+@media (max-width:715px) {
+  .headerNav{
+    
+    .haederUP{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      h3{
+        margin-left: 0px;
+        
+      }
+      .buttonHaederUP{
+        margin-right: 0px;
+        margin-left: 80px;
+      }
+    }
+    .HeaderSection{
+      text-align: center;
+      align-items: center;
+      h1{
+        margin-left: 0px;
+        margin-top: 30px;
+      }
+      p{
+        margin-left: 0px;
+        max-width: 220px;
+      }
+    }
+    .headerBottonBotton{
+      margin-left: 0px;
+    }
+  }
+}
+@media (max-width:483px) {
+  .sectionLink{
+    .sectionLink-Program{
+      margin-left: 0px;
+      margin-top: 30px;
+      h2{
+        font-size: 32px;
+      }
+      ul{
+        margin-top: 12px;
+        .ul--li{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .section--tickets{
+    margin-right: 0px;
+    margin-top: 62px;
+    h2{
+      font-size: 32px;
+    }
+    input{
+      width: 240px;
+      margin-left: 120px;
+    }
   }
 }
