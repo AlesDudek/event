@@ -137,4 +137,38 @@ body{
     }
   }
 }
-
+.section--tickets{
+  margin-right: 160px;
+  margin-top: 122px;
+  h2{
+    font-size: 64px;
+    color: $yellow;
+  }
+  input{
+    width: 480px;
+    height: 50px;
+    padding: 16px;
+  }
+  .section__input--one{
+    margin-top: 48px;
+  }
+  .section__input--two{
+    margin-top: 24px;
+  }
+  .section__input--three{
+    margin-top: 24px;
+  }
+  .section__tickets--checkbox{
+    width: 18px;
+    height: 18px;
+    margin-top: 30px;
+    display: flex;
+  }
+  .section__tickets--button{
+    margin-top: 16px;
+    width: 480px;
+    height: 48px;
+    background-color: $buttonPri;
+    color: $white;
+  }
+}

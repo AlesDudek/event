@@ -186,4 +186,49 @@ body {
 .sectionLink .sectionLink-Program ul .ul--li .ul__li--li img {
   width: 24px;
 }
+
+.section--tickets {
+  margin-right: 160px;
+  margin-top: 122px;
+}
+
+.section--tickets h2 {
+  font-size: 64px;
+  color: #CC9933;
+}
+
+.section--tickets input {
+  width: 480px;
+  height: 50px;
+  padding: 16px;
+}
+
+.section--tickets .section__input--one {
+  margin-top: 48px;
+}
+
+.section--tickets .section__input--two {
+  margin-top: 24px;
+}
+
+.section--tickets .section__input--three {
+  margin-top: 24px;
+}
+
+.section--tickets .section__tickets--checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section--tickets .section__tickets--button {
+  margin-top: 16px;
+  width: 480px;
+  height: 48px;
+  background-color: #3F51F6;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
