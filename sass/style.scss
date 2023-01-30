@@ -87,8 +87,18 @@ body{
   justify-content: space-between;
   article{
     max-width: 298.73px;
+    h2{
+      color: $yellow;
+      font-size: 64px;
+    }
   }
   .section__article-one{
     margin-left: 160px;
+  }
+  .section__article-two{
+
+  }
+  .section__article-three{
+    margin-right: 160px;
   }
 }

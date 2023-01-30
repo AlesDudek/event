@@ -125,7 +125,16 @@ body {
   max-width: 298.73px;
 }
 
+.sectionIformation article h2 {
+  color: #CC9933;
+  font-size: 64px;
+}
+
 .sectionIformation .section__article-one {
   margin-left: 160px;
+}
+
+.sectionIformation .section__article-three {
+  margin-right: 160px;
 }
 /*# sourceMappingURL=style.css.map */
