@@ -37,6 +37,7 @@ body {
 }
 
 .headerNav .haederUP .buttonHaederUP {
+  border: none;
   margin-top: 42px;
   margin-right: 160px;
   padding: 12px 16px;
@@ -89,6 +90,7 @@ body {
 }
 
 .headerNav .headerBottonBotton {
+  border: none;
   margin-top: 48px;
   margin-left: 160px;
   padding: 12px 16px;
