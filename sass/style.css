@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.headerNav {
+  height: 600px;
+  background: url(../img/eventimg.png);
+  background: cover;
+  background-repeat: no-repeat;
+}
+
+.headerNav .haederUP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerNav .haederUP h3 {
+  color: #CC9933;
+  margin-top: 42px;
+  margin-left: 160px;
+  width: 119px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.headerNav .haederUP .buttonHaederUP {
+  margin-top: 42px;
+  margin-right: 160px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #3F51F6;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.headerNav .haederUP .buttonHaederUP img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.headerNav .HeaderSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.headerNav .HeaderSection h1 {
+  color: #fff;
+  margin-top: 61px;
+  margin-left: 160px;
+  font-size: 38px;
+  min-width: 409px;
+}
+
+.headerNav .HeaderSection p {
+  font-size: 16px;
+  color: #fff;
+  margin-left: 160px;
+  margin-top: 16px;
+  max-width: 540px;
+}
+
+.headerNav .headerBottonBotton {
+  margin-top: 48px;
+  margin-left: 160px;
+  padding: 12px 16px;
+  background: #3F51F6;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 177px;
+}
+
+.headerNav .headerBottonBotton img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.sectionIformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 64px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionIformation article {
+  max-width: 298.73px;
+}
+
+.sectionIformation .section__article-one {
+  margin-left: 160px;
+}
+/*# sourceMappingURL=style.css.map */
