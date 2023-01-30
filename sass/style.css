@@ -137,4 +137,53 @@ body {
 .sectionIformation .section__article-three {
   margin-right: 160px;
 }
+
+.sectionLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionLink div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sectionLink .sectionLink-Program {
+  margin-left: 160px;
+  margin-top: 122px;
+}
+
+.sectionLink .sectionLink-Program h2 {
+  color: #CC9933;
+  font-size: 64px;
+}
+
+.sectionLink .sectionLink-Program ul {
+  margin-top: 48px;
+}
+
+.sectionLink .sectionLink-Program ul .ul--li {
+  color: #262626;
+  margin-top: 48px;
+  font-size: 36px;
+  color: #262626;
+}
+
+.sectionLink .sectionLink-Program ul .ul--li .ul__li--li {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.sectionLink .sectionLink-Program ul .ul--li .ul__li--li img {
+  width: 24px;
+}
 /*# sourceMappingURL=style.css.map */
