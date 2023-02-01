@@ -10,8 +10,8 @@
 <body>
   <header class="headerNav">
       <div class="haederUP">
-        <h3>DEVCON</h3>
-      <button class="buttonHaederUP"><img src="./img/ticket.png" alt="ticket"> BUY a TICKET</button>
+        <h1>DEVCON</h1>
+      <a href="#from" class="buttonHaederUP"><img src="./img/ticket 1.svg" alt="ticket"> BUY a TICKET</a>
       </div>
       <div class="HeaderSection">
         <h1>DEV CONFERENCE</h1>
@@ -19,7 +19,10 @@
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla quis diam. Nulla non lectus sed nisl molestie malesuada. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Proin in tellus sit amet nibh dignissim sagittis.
         </p>
       </div>
-      <button class="headerBottonBotton"><img src="./img/ticket.png" alt="ticket"> BUY a TICKET</button>
+      <div class="header_BottonBotton">
+        <a href="#from" class="headerBottonBotton"><img src="./img/ticket 1.svg" alt="ticket"> BUY a TICKET</a>
+
+      </div>
   </header>
 
   <!-- section -->
@@ -45,58 +48,54 @@
     <div class="sectionLink-Program">
       <h2>PROGRAM</h2>
       <ul>
-        <!-- <div class="image-dot">
-          <img src="./img/dot.png" alt="dot" class="dot">
-          <img src="./img/line.png" alt="line" class="line">
-        </div> -->
         <li class="ul--li">
           <div class="ul__li--dot">
-            <img src="./img/dot.png" alt="dot" class="dot">
+            <img src="./img/dot.svg" alt="dot" class="dot">
             <h4>JavaScript talk</h4>
           </div>
           <div class="ul__li--line">
-            <img src="./img/line.png" alt="line" class="line">
+            <img src="./img/line.svg" alt="line" class="line">
             <p class="ul__li--li">
-              <img src="./img/clock.png" alt="clock">
+              <img src="./img/clock.svg" alt="clock">
               9:00 - 11:00
             </p>
           </div>
         </li>
         <li class="ul--li">
           <div class="ul__li--dot">
-            <img src="./img/dot.png" alt="dot" class="dot">
+            <img src="./img/dot.svg" alt="dot" class="dot">
             <h4>JS PERFORMACE</h4>
           </div>
           <div class="ul__li--line">
-            <img src="./img/line.png" alt="line" class="line">
+            <img src="./img/line.svg" alt="line" class="line">
             <p class="ul__li--li">
-              <img src="./img/clock.png" alt="clock">
+              <img src="./img/clock.svg" alt="clock">
               11:15 - 12:15
             </p>
           </div>
         </li>
         <li class="ul--li">
           <div class="ul__li--dot">
-            <img src="./img/dot.png" alt="dot" class="dot">
+            <img src="./img/dot.svg" alt="dot" class="dot">
             <h4>JAVASCRIPT TALK</h4>
           </div>
           <div class="ul__li--line">
-            <img src="./img/line.png" alt="line" class="line">
+            <img src="./img/line.svg" alt="line" class="line">
             <p class="ul__li--li">
-              <img src="./img/clock.png" alt="clock">
+              <img src="./img/clock.svg" alt="clock">
               9:00 - 11:00
             </p>
           </div>
         </li>
         <li class="ul--li ul__li--last">
           <div class="ul__li--dot">
-            <img src="./img/dot.png" alt="dot" class="dot">
+            <img src="./img/dot.svg" alt="dot" class="dot">
             <h4>JAVASCRIPT TALK</h4>
           </div>
           <div class="ul__li--line">
-            <img src="./img/line.png" alt="line" class="line">
+            <img src="./img/line.svg" alt="line" class="line">
             <p class="ul__li--li">
-              <img src="./img/clock.png" alt="clock">
+              <img src="./img/clock.svg" alt="clock">
               9:00 - 11:00
             </p>
           </div>
@@ -105,16 +104,21 @@
     </div>
     <div class="section--tickets">
       <h2>TICKETS</h2>
-      <input type="text" placeholder="Name" class="section__input--one">
-      <input type="email" placeholder="E-mail" class="section__input--two">
-      <input type="number" placeholder="Phone number" class="section__input--three">
-      <input type="checkbox" class="section__tickets--checkbox" name="userId" id="userId">
-      <label for="userId" class="section__tickets--lable">
-        I agree to the processing of <span>personal data</span>
-      </label>
-      <button class="section__tickets--button">
-        GO TO PAYMENT
-      </button>      
+      <form id="from">
+        <input type="text" placeholder="Name" class="section__input--one">
+        <input type="email" placeholder="E-mail" class="section__input--two">
+        <input type="tel" placeholder="Phone number" class="section__input--three">
+        <div class="div__checkbox">
+          <input type="checkbox" class="section__tickets--checkbox" name="userId" id="userId">
+          <p for="userId" class="section__tickets--lable">
+            I agree to the processing of <span>personal data</span>
+          </p>
+        </div>
+        <button class="section__tickets--button">
+          GO TO PAYMENT
+        </button>
+
+      </form>
     </div>
   </section>
 </body>

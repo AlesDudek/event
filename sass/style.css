@@ -5,20 +5,31 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 1440px;
   height: 100vh;
   margin: 0 auto;
 }
 
+.HeaderSection, .headerBottonBotton, section {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
 .headerNav {
-  height: 600px;
-  background: radial-gradient(rgba(40, 38, 38, 0.332), #262525), url(../img/eventimg.png);
-  background: cover;
+  background: radial-gradient(rgba(40, 38, 38, 0.332), #262525), url(../img/event.svg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .headerNav .haederUP {
+  max-width: 1120px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,11 +38,9 @@ body {
           justify-content: space-between;
 }
 
-.headerNav .haederUP h3 {
+.headerNav .haederUP h1 {
   color: #CC9933;
   margin-top: 42px;
-  margin-left: 160px;
-  width: 119px;
   font-size: 48px;
   font-weight: bold;
 }
@@ -39,7 +48,6 @@ body {
 .headerNav .haederUP .buttonHaederUP {
   border: none;
   margin-top: 42px;
-  margin-right: 160px;
   padding: 12px 16px;
   font-size: 16px;
   font-weight: bold;
@@ -61,6 +69,7 @@ body {
 
 .headerNav .haederUP .buttonHaederUP:hover {
   cursor: pointer;
+  background-color: #303FC8;
 }
 
 .headerNav .HeaderSection {
@@ -76,7 +85,6 @@ body {
 .headerNav .HeaderSection h1 {
   color: #fff;
   margin-top: 61px;
-  margin-left: 160px;
   font-size: 38px;
   min-width: 409px;
 }
@@ -84,15 +92,24 @@ body {
 .headerNav .HeaderSection p {
   font-size: 16px;
   color: #fff;
-  margin-left: 160px;
   margin-top: 16px;
   max-width: 540px;
 }
 
-.headerNav .headerBottonBotton {
+.headerNav .header_BottonBotton {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerNav .header_BottonBotton .headerBottonBotton {
   border: none;
   margin-top: 48px;
-  margin-left: 160px;
   padding: 12px 16px;
   background: #3F51F6;
   color: #fff;
@@ -101,20 +118,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 177px;
 }
 
-.headerNav .headerBottonBotton img {
+.headerNav .header_BottonBotton .headerBottonBotton img {
   width: 24px;
   margin-right: 8px;
 }
 
-.headerNav .headerBottonBotton:hover {
+.headerNav .header_BottonBotton .headerBottonBotton:hover {
   cursor: pointer;
+  background-color: #303FC8;
 }
 
 .sectionIformation {
@@ -141,14 +157,6 @@ body {
   font-size: 64px;
 }
 
-.sectionIformation .section__article-one {
-  margin-left: 160px;
-}
-
-.sectionIformation .section__article-three {
-  margin-right: 160px;
-}
-
 .sectionLink {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,7 +166,7 @@ body {
           justify-content: space-between;
 }
 
-.sectionLink div {
+.sectionLink .ul__li--dot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,7 +177,6 @@ body {
 }
 
 .sectionLink .sectionLink-Program {
-  margin-left: 160px;
   margin-top: 122px;
 }
 
@@ -238,6 +245,12 @@ body {
 }
 
 .sectionLink .sectionLink-Program ul .ul--li .ul__li--li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
   font-size: 24px;
   color: #262626;
@@ -246,6 +259,7 @@ body {
 .sectionLink .sectionLink-Program ul .ul--li .ul__li--li img {
   width: 24px;
   color: #262626;
+  margin-right: 8px;
 }
 
 .sectionLink .sectionLink-Program ul .ul__li--last {
@@ -253,7 +267,6 @@ body {
 }
 
 .section--tickets {
-  margin-right: 160px;
   margin-top: 122px;
 }
 
@@ -262,42 +275,64 @@ body {
   color: #CC9933;
 }
 
-.section--tickets input {
+.section--tickets form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section--tickets form input {
   width: 480px;
   height: 50px;
   padding: 16px;
 }
 
-.section--tickets .section__input--one {
+.section--tickets form .section__input--one {
   margin-top: 48px;
 }
 
-.section--tickets .section__input--two {
+.section--tickets form .section__input--two {
   margin-top: 24px;
 }
 
-.section--tickets .section__input--three {
+.section--tickets form .section__input--three {
   margin-top: 24px;
 }
 
-.section--tickets .section__tickets--checkbox {
-  width: 18px;
-  height: 18px;
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.section--tickets .section__tickets--checkbox:hover {
+.section--tickets form .section__tickets--checkbox:hover {
   cursor: pointer;
 }
 
-.section--tickets .section__tickets--lable span {
+.section--tickets form .div__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section--tickets form .div__checkbox .section__tickets--checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.section--tickets form .div__checkbox .section__tickets--lable span {
   border-bottom: 1px solid #000;
 }
 
-.section--tickets .section__tickets--button {
+.section--tickets form .section__tickets--button {
   margin-top: 16px;
   width: 480px;
   height: 48px;
@@ -306,19 +341,13 @@ body {
   border: none;
 }
 
-.section--tickets .section__tickets--button:hover {
+.section--tickets form .section__tickets--button:hover {
   cursor: pointer;
 }
 
 @media (max-width: 1165px) {
-  .sectionLink .sectionLink-Program h2 {
-    font-size: 32px;
-  }
   .sectionLink .sectionLink-Program ul .ul--li .ul__li--dot h4 {
     font-size: 25px;
-  }
-  .section--tickets h2 {
-    font-size: 32px;
   }
 }
 
@@ -333,10 +362,10 @@ body {
             flex-direction: column;
   }
   .sectionIformation .section__article-one {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .sectionIformation .section__article-three {
-    margin-right: 0px;
+    margin-right: 0;
   }
   .sectionLink {
     display: -webkit-box;
@@ -352,11 +381,11 @@ body {
             align-items: center;
   }
   .sectionLink .sectionLink-Program {
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 61px;
   }
   .sectionLink .sectionLink-Program h2 {
-    font-size: 64px;
+    font-size: 32px;
   }
   .sectionLink .sectionLink-Program ul {
     margin-top: 24px;
@@ -364,11 +393,14 @@ body {
   .sectionLink .sectionLink-Program ul .ul--li {
     font-size: 36px;
   }
+  .sectionLink .sectionLink-Program ul .ul__li--last {
+    margin-bottom: 0;
+  }
   .section--tickets {
-    margin-right: 0px;
+    margin-top: 61px;
   }
   .section--tickets h2 {
-    font-size: 64px;
+    font-size: 32px;
   }
 }
 
@@ -390,10 +422,10 @@ body {
             justify-content: center;
   }
   .headerNav .haederUP h3 {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .headerNav .haederUP .buttonHaederUP {
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 80px;
   }
   .headerNav .HeaderSection {
@@ -403,7 +435,7 @@ body {
             align-items: center;
   }
   .headerNav .HeaderSection h1 {
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 30px;
   }
   .headerNav .HeaderSection p {
@@ -411,13 +443,13 @@ body {
     max-width: 220px;
   }
   .headerNav .headerBottonBotton {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
 @media (max-width: 483px) {
   .sectionLink .sectionLink-Program {
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 30px;
   }
   .sectionLink .sectionLink-Program h2 {
@@ -430,7 +462,7 @@ body {
     font-size: 20px;
   }
   .section--tickets {
-    margin-right: 0px;
+    margin-right: 0;
     margin-top: 62px;
   }
   .section--tickets h2 {

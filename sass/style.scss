@@ -1,35 +1,43 @@
 @import "variabels";
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
 }
 body{
   max-width: 1440px;
   height: 100vh;
   margin: 0 auto;
 }
+.HeaderSection, .headerBottonBotton, section{
+  max-width: 1120px;
+  margin: 0 auto;
+}
 //************ header ********//
 .headerNav{
-  height: 600px;
-  background: radial-gradient(rgba(40, 38, 38, 0.332),rgb(38, 37, 37)),url(../img/eventimg.png);
-  background: cover;
+  background: radial-gradient(rgba(40, 38, 38, 0.332),rgb(38, 37, 37)),url(../img/event.svg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   .haederUP{
+    max-width: 1120px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    h3{
+    h1{
+      
       color: $yellow;
       margin-top: 42px;
-      margin-left: 160px;
-      width: 119px;
       font-size: 48px;
       font-weight: bold;
     }
     .buttonHaederUP{
       border: none;
       margin-top: 42px;
-      margin-right: 160px;
       padding: 12px 16px;
       font-size: 16px;
       font-weight: bold;
@@ -45,6 +53,7 @@ body{
     }
     .buttonHaederUP:hover{
       cursor: pointer;
+      background-color: $buttonHover;
     }
   }
   .HeaderSection{
@@ -54,38 +63,40 @@ body{
 
       color: $white;
       margin-top: 61px;
-      margin-left: 160px;
       font-size: 38px;
       min-width: 409px;
     }
     p{
       font-size: 16px;
       color: $white;
-      margin-left: 160px;
       margin-top: 16px;
       max-width: 540px;
     }
   }
-  .headerBottonBotton{
-    border: none;
-    margin-top: 48px;
-    margin-left: 160px;
-    padding: 12px 16px;
-    background: $buttonPri;
-    color: $white;
-    font-size: 16px;
-    font-weight: bold;
+  .header_BottonBotton{
+    max-width: 1120px;
+    margin: 0 auto;
     display: flex;
-    text-align: center;
-    align-items: center;
-    img{
-      width: 24px;
-      margin-right: 8px;
+    justify-content: space-between;
+    .headerBottonBotton{
+      border: none;
+      margin-top: 48px;
+      padding: 12px 16px;
+      background: $buttonPri;
+      color: $white;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      img{
+        width: 24px;
+        margin-right: 8px;
+      }
     }
-    margin-bottom: 177px;
-  }
-  .headerBottonBotton:hover{
-    cursor: pointer;
+    .headerBottonBotton:hover{
+      cursor: pointer;
+      background-color: $buttonHover;
+    }
   }
 }
 //*********** section***********//
@@ -103,26 +114,16 @@ body{
       font-size: 64px;
     }
   }
-  .section__article-one{
-    margin-left: 160px;
-  }
-  .section__article-two{
-
-  }
-  .section__article-three{
-    margin-right: 160px;
-  }
 }
 //***** section LINK *****/
 .sectionLink{
   display: flex;
   justify-content: space-between;
-  div{
+  .ul__li--dot{
     display: flex;
     flex-direction: column;
   }
   .sectionLink-Program{
-    margin-left: 160px;
     margin-top: 122px;
     h2{
       color: $yellow;
@@ -163,12 +164,15 @@ body{
           }
         }
         .ul__li--li{
+          display: flex;
+          align-items: center;
           margin-top: 20px;
           font-size: 24px;
           color: $black;
           img{
             width: 24px;
             color: $black;
+            margin-right: 8px;
           }
         }
       }
@@ -181,58 +185,68 @@ body{
 //**** section Tickets ***/
 
 .section--tickets{
-  margin-right: 160px;
   margin-top: 122px;
+  
   h2{
     font-size: 64px;
     color: $yellow;
   }
-  input{
+  form{
+    display: flex;
+    flex-direction: column;
+    input{
     width: 480px;
     height: 50px;
     padding: 16px;
-  }
-  .section__input--one{
-    margin-top: 48px;
-  }
-  .section__input--two{
-    margin-top: 24px;
-  }
-  .section__input--three{
-    margin-top: 24px;
-  }
-  .section__tickets--checkbox{
-    width: 18px;
-    height: 18px;
-    margin-top: 30px;
-    display: flex;
-  }
-  .section__tickets--checkbox:hover{
-    cursor: pointer;
-  }
-  .section__tickets--lable{
-    span{
-      border-bottom: 1px solid $blackBottom;
     }
-  }
-  .section__tickets--button{
-    margin-top: 16px;
-    width: 480px;
-    height: 48px;
-    background-color: $buttonPri;
-    color: $white;
-    border: none;
-  }
-  .section__tickets--button:hover{
-    cursor: pointer;
+    .section__input--one{
+      margin-top: 48px;
+    }
+    .section__input--two{
+      margin-top: 24px;
+    }
+    .section__input--three{
+      margin-top: 24px;
+    }
+    .section__tickets--checkbox:hover{
+      cursor: pointer;
+    }
+    .div__checkbox{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      margin-top: 30px;
+      .section__tickets--checkbox{
+        width: 18px;
+        height: 18px;
+        
+        margin-right: 8px;
+      }
+      .section__tickets--lable{
+        
+        span{
+          border-bottom: 1px solid $blackBottom;
+        }
+      }
+    }
+    .section__tickets--button{
+      margin-top: 16px;
+      width: 480px;
+      height: 48px;
+      background-color: $buttonPri;
+      color: $white;
+      border: none;
+    }
+    .section__tickets--button:hover{
+      cursor: pointer;
+    }
   }
 }
 @media (max-width:1165px) {
   .sectionLink{
     .sectionLink-Program{
-      h2{
-        font-size: 32px;
-      }
+      
       ul{
         .ul--li{
           .ul__li--dot{
@@ -244,21 +258,17 @@ body{
       }
     }
   }
-  .section--tickets{
-    h2{
-      font-size: 32px;
-    }
-  }
+  
 }
 @media (max-width:986px) {
   .sectionIformation{
     display: flex;
     flex-direction: column;
     .section__article-one{
-      margin-left: 0px;
+      margin-left: 0;
     }
     .section__article-three{
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
   .sectionLink{
@@ -267,23 +277,26 @@ body{
     text-align: center;
     align-items: center;
     .sectionLink-Program{
-      margin-left: 0px;
+      margin-left: 0;
       margin-top: 61px;
       h2{
-        font-size: 64px;
+        font-size: 32px;
       }
       ul{
         margin-top: 24px;
         .ul--li{
           font-size: 36px;
         }
+        .ul__li--last{
+          margin-bottom: 0;
+        }
       }
     }
   }
   .section--tickets{
-    margin-right: 0px;
+    margin-top: 61px;
     h2{
-      font-size: 64px;
+      font-size: 32px;
     }
   }
 }
@@ -297,11 +310,11 @@ body{
       align-items: center;
       justify-content: center;
       h3{
-        margin-left: 0px;
+        margin-left: 0;
         
       }
       .buttonHaederUP{
-        margin-right: 0px;
+        margin-right: 0;
         margin-left: 80px;
       }
     }
@@ -309,7 +322,7 @@ body{
       text-align: center;
       align-items: center;
       h1{
-        margin-left: 0px;
+        margin-left: 0;
         margin-top: 30px;
       }
       p{
@@ -318,14 +331,14 @@ body{
       }
     }
     .headerBottonBotton{
-      margin-left: 0px;
+      margin-left: 0;
     }
   }
 }
 @media (max-width:483px) {
   .sectionLink{
     .sectionLink-Program{
-      margin-left: 0px;
+      margin-left: 0;
       margin-top: 30px;
       h2{
         font-size: 32px;
@@ -339,7 +352,7 @@ body{
     }
   }
   .section--tickets{
-    margin-right: 0px;
+    margin-right: 0;
     margin-top: 62px;
     h2{
       font-size: 32px;
