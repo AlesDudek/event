@@ -283,6 +283,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
+}
+
+.section--tickets form .notificationName, .section--tickets form .notificationEmail, .section--tickets form .notificationPhone {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff0202;
+  background-color: #262626;
+  display: none;
+}
+
+.section--tickets form .notificationName {
+  margin-top: 48px;
 }
 
 .section--tickets form input {
