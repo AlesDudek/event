@@ -105,24 +105,38 @@
     <div class="section--tickets">
       <h2>TICKETS</h2>
       <form id="from">
+              <!-- NAME -->
         <p class="notificationName">
           please fill in your name
         </p>
         <input type="text" placeholder="Name" class="section__input--one fullName">
+              <!-- NAME-END -->
+
+              <!-- EMAIL -->
         <p class="notificationEmail">
           fill in E-mail please
         </p>
+        <span id="text__email"></span>
         <input type="email" placeholder="E-mail" class="section__input--two fullEmail">
+              <!-- EMAIL-END -->
+
+              <!-- PHONE -->
         <p class="notificationPhone">
           please fill in your phone number
         </p>
         <input type="tel" placeholder="Phone number" class="section__input--three fullPhone">
+              <!-- PHONE-END -->
+
+              <!-- Checkbox -->
         <div class="div__checkbox">
+        
           <input type="checkbox" class="section__tickets--checkbox fullCheckbox" name="userId" id="userId">
           <p for="userId" class="section__tickets--lable notificationCheckboc">
-            I agree to the processing of <span>personal data</span>
+            I agree to the processing of <span class="sanp--BB">personal data</span>
           </p>
+
         </div>
+              <!-- Checkbox-END -->
         <button class="section__tickets--button" type="submit">
           GO TO PAYMENT
         </button>

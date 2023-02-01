@@ -191,6 +191,7 @@ body{
     font-size: 64px;
     color: $yellow;
   }
+  
   form{
     display: flex;
     flex-direction: column;
@@ -215,6 +216,7 @@ body{
     }
     .section__input--two{
       margin-top: 24px;
+
     }
     .section__input--three{
       margin-top: 24px;
@@ -236,7 +238,7 @@ body{
       }
       .section__tickets--lable{
         
-        span{
+        .sanp--BB{
           border-bottom: 1px solid $blackBottom;
         }
       }
