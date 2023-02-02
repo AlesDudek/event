@@ -137,13 +137,13 @@ body{
       color: $yellow;
       font-size: 64px;
     }
-    ul{
+    .ul{
       list-style: none;
-      .ul--li{
+      .ul__li{
         color: $yellow;
         margin-top: 48px;
         font-size: 36px;
-        .ul__li--dot{
+        .ul__li__dot{
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -158,7 +158,7 @@ body{
             color: $black;
           }
         }
-        .ul__li--line{
+        .ul__li__line{
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -172,7 +172,7 @@ body{
             height: 64px;
           }
         }
-        .ul__li--li{
+        .ul__li__li{
           display: flex;
           align-items: center;
           margin-top: 20px;
@@ -193,7 +193,7 @@ body{
 }
 //**** section Tickets ***/
 
-.section--tickets{
+.section__tickets{
   margin-top: 122px;
   
   h2{
@@ -265,6 +265,8 @@ body{
     }
     .section__tickets--button:hover{
       cursor: pointer;
+      background-color: $buttonHover;
+      transition: .2s all ease-in-out;
     }
   }
 }
@@ -273,8 +275,8 @@ body{
     .sectionLink-Program{
       
       ul{
-        .ul--li{
-          .ul__li--dot{
+        .ul__li{
+          .ul__li__dot{
             h4{
               font-size: 25px;
             }
@@ -309,7 +311,7 @@ body{
       }
       ul{
         margin-top: 24px;
-        .ul--li{
+        .ul__li{
           font-size: 36px;
         }
         .ul__li--last{
@@ -370,7 +372,7 @@ body{
       }
       ul{
         margin-top: 12px;
-        .ul--li{
+        .ul__li{
           font-size: 20px;
         }
       }

@@ -197,17 +197,17 @@ body {
   font-size: 64px;
 }
 
-.sectionLink .sectionLink-Program ul {
+.sectionLink .sectionLink-Program .ul {
   list-style: none;
 }
 
-.sectionLink .sectionLink-Program ul .ul--li {
+.sectionLink .sectionLink-Program .ul .ul__li {
   color: #CC9933;
   margin-top: 48px;
   font-size: 36px;
 }
 
-.sectionLink .sectionLink-Program ul .ul--li .ul__li--dot {
+.sectionLink .sectionLink-Program .ul .ul__li .ul__li__dot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,19 +220,19 @@ body {
           align-items: center;
 }
 
-.sectionLink .sectionLink-Program ul .ul--li .ul__li--dot .dot {
+.sectionLink .sectionLink-Program .ul .ul__li .ul__li__dot .dot {
   width: 20px;
   height: 20px;
   margin-right: 20px;
 }
 
-.sectionLink .sectionLink-Program ul .ul--li .ul__li--dot h4 {
+.sectionLink .sectionLink-Program .ul .ul__li .ul__li__dot h4 {
   font-size: 36px;
   font-weight: bold;
   color: #262626;
 }
 
-.sectionLink .sectionLink-Program ul .ul--li .ul__li--line {
+.sectionLink .sectionLink-Program .ul .ul__li .ul__li__line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,7 +246,7 @@ body {
   font-family: 'Lora', serif;
 }
 
-.sectionLink .sectionLink-Program ul .ul--li .ul__li--line .line {
+.sectionLink .sectionLink-Program .ul .ul__li .ul__li__line .line {
   margin-top: 17px;
   margin-left: 8px;
   margin-right: 35px;
@@ -257,7 +257,7 @@ body {
   height: 64px;
 }
 
-.sectionLink .sectionLink-Program ul .ul--li .ul__li--li {
+.sectionLink .sectionLink-Program .ul .ul__li .ul__li__li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,26 +269,26 @@ body {
   color: #262626;
 }
 
-.sectionLink .sectionLink-Program ul .ul--li .ul__li--li img {
+.sectionLink .sectionLink-Program .ul .ul__li .ul__li__li img {
   width: 24px;
   color: #262626;
   margin-right: 8px;
 }
 
-.sectionLink .sectionLink-Program ul .ul__li--last {
+.sectionLink .sectionLink-Program .ul .ul__li--last {
   margin-bottom: 139px;
 }
 
-.section--tickets {
+.section__tickets {
   margin-top: 122px;
 }
 
-.section--tickets h2 {
+.section__tickets h2 {
   font-size: 64px;
   color: #CC9933;
 }
 
-.section--tickets form {
+.section__tickets form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +299,7 @@ body {
   text-align: center;
 }
 
-.section--tickets form .notificationName, .section--tickets form .notificationEmail, .section--tickets form .notificationPhone {
+.section__tickets form .notificationName, .section__tickets form .notificationEmail, .section__tickets form .notificationPhone {
   font-size: 25px;
   font-weight: bold;
   color: #ff0202;
@@ -307,37 +307,37 @@ body {
   display: none;
 }
 
-.section--tickets form p {
+.section__tickets form p {
   font-family: 'Lora', serif;
 }
 
-.section--tickets form .notificationName {
+.section__tickets form .notificationName {
   margin-top: 48px;
 }
 
-.section--tickets form input {
+.section__tickets form input {
   width: 480px;
   height: 50px;
   padding: 16px;
 }
 
-.section--tickets form .section__input--one {
+.section__tickets form .section__input--one {
   margin-top: 48px;
 }
 
-.section--tickets form .section__input--two {
+.section__tickets form .section__input--two {
   margin-top: 24px;
 }
 
-.section--tickets form .section__input--three {
+.section__tickets form .section__input--three {
   margin-top: 24px;
 }
 
-.section--tickets form .section__tickets--checkbox:hover {
+.section__tickets form .section__tickets--checkbox:hover {
   cursor: pointer;
 }
 
-.section--tickets form .div__checkbox {
+.section__tickets form .div__checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,17 +352,17 @@ body {
   margin-top: 30px;
 }
 
-.section--tickets form .div__checkbox .section__tickets--checkbox {
+.section__tickets form .div__checkbox .section__tickets--checkbox {
   width: 18px;
   height: 18px;
   margin-right: 8px;
 }
 
-.section--tickets form .div__checkbox .section__tickets--lable .sanp--BB {
+.section__tickets form .div__checkbox .section__tickets--lable .sanp--BB {
   border-bottom: 1px solid #000;
 }
 
-.section--tickets form .section__tickets--button {
+.section__tickets form .section__tickets--button {
   margin-top: 16px;
   width: 480px;
   height: 48px;
@@ -371,12 +371,15 @@ body {
   border: none;
 }
 
-.section--tickets form .section__tickets--button:hover {
+.section__tickets form .section__tickets--button:hover {
   cursor: pointer;
+  background-color: #303FC8;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
 }
 
 @media (max-width: 1165px) {
-  .sectionLink .sectionLink-Program ul .ul--li .ul__li--dot h4 {
+  .sectionLink .sectionLink-Program ul .ul__li .ul__li__dot h4 {
     font-size: 25px;
   }
 }
@@ -420,7 +423,7 @@ body {
   .sectionLink .sectionLink-Program ul {
     margin-top: 24px;
   }
-  .sectionLink .sectionLink-Program ul .ul--li {
+  .sectionLink .sectionLink-Program ul .ul__li {
     font-size: 36px;
   }
   .sectionLink .sectionLink-Program ul .ul__li--last {
@@ -488,7 +491,7 @@ body {
   .sectionLink .sectionLink-Program ul {
     margin-top: 12px;
   }
-  .sectionLink .sectionLink-Program ul .ul--li {
+  .sectionLink .sectionLink-Program ul .ul__li {
     font-size: 20px;
   }
   .section--tickets {
