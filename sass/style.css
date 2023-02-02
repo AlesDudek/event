@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,7 @@ body {
   max-width: 1440px;
   height: 100vh;
   margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
 }
 
 .HeaderSection, .headerBottonBotton, section {
@@ -70,6 +73,8 @@ body {
 .headerNav .haederUP .buttonHaederUP:hover {
   cursor: pointer;
   background-color: #303FC8;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
 }
 
 .headerNav .HeaderSection {
@@ -90,6 +95,7 @@ body {
 }
 
 .headerNav .HeaderSection p {
+  font-family: 'Lora', serif;
   font-size: 16px;
   color: #fff;
   margin-top: 16px;
@@ -131,6 +137,8 @@ body {
 .headerNav .header_BottonBotton .headerBottonBotton:hover {
   cursor: pointer;
   background-color: #303FC8;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
 }
 
 .sectionIformation {
@@ -155,6 +163,10 @@ body {
 .sectionIformation article h2 {
   color: #CC9933;
   font-size: 64px;
+}
+
+.sectionIformation article p {
+  font-family: 'Lora', serif;
 }
 
 .sectionLink {
@@ -231,6 +243,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Lora', serif;
 }
 
 .sectionLink .sectionLink-Program ul .ul--li .ul__li--line .line {
@@ -292,6 +305,10 @@ body {
   color: #ff0202;
   background-color: #262626;
   display: none;
+}
+
+.section--tickets form p {
+  font-family: 'Lora', serif;
 }
 
 .section--tickets form .notificationName {
