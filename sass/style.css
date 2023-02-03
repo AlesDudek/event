@@ -113,7 +113,7 @@ body {
           justify-content: space-between;
 }
 
-.headerNav .header_BottonBotton .headerBottonBotton {
+.headerNav .header_BottonBotton .header_BottonBotton__left .headerBottonBotton {
   border: none;
   margin-top: 48px;
   padding: 12px 16px;
@@ -129,12 +129,12 @@ body {
           align-items: center;
 }
 
-.headerNav .header_BottonBotton .headerBottonBotton img {
+.headerNav .header_BottonBotton .header_BottonBotton__left .headerBottonBotton img {
   width: 24px;
   margin-right: 8px;
 }
 
-.headerNav .header_BottonBotton .headerBottonBotton:hover {
+.headerNav .header_BottonBotton .header_BottonBotton__left .headerBottonBotton:hover {
   cursor: pointer;
   background-color: #303FC8;
   -webkit-transition: .2s all ease-in-out;
