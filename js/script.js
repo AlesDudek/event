@@ -4,6 +4,7 @@ const fullEmail = document.querySelector(".fullEmail");
 const fullPhone = document.querySelector(".fullPhone");
 
 const textEmail = document.querySelector("#text__email");
+
 let pattern = /^([a-z\d\.]+)@([a-z\d\-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
 
 

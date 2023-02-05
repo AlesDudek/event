@@ -48,11 +48,18 @@ body {
   font-weight: bold;
 }
 
-.headerNav .haederUP .buttonHaederUP {
-  border: none;
+.headerNav .haederUP .haederUP__a {
   margin-top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerNav .haederUP .haederUP__a .buttonHaederUP {
   padding: 12px 16px;
-  font-size: 16px;
   font-weight: bold;
   background: #3F51F6;
   color: #fff;
@@ -63,9 +70,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  text-decoration: none;
 }
 
-.headerNav .haederUP .buttonHaederUP img {
+.headerNav .haederUP .haederUP__a img {
   width: 24px;
   margin-right: 8px;
 }
@@ -113,6 +121,10 @@ body {
           justify-content: space-between;
 }
 
+.headerNav .header_BottonBotton .header_BottonBotton__left {
+  margin-bottom: 174px;
+}
+
 .headerNav .header_BottonBotton .header_BottonBotton__left .headerBottonBotton {
   border: none;
   margin-top: 48px;
@@ -127,6 +139,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 .headerNav .header_BottonBotton .header_BottonBotton__left .headerBottonBotton img {
@@ -153,6 +166,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
 
 .sectionIformation article {
@@ -244,6 +258,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: 'Lora', serif;
+  color: #262626;
 }
 
 .sectionLink .sectionLink-Program .ul .ul__li .ul__li__line .line {
@@ -266,7 +281,6 @@ body {
           align-items: center;
   margin-top: 20px;
   font-size: 24px;
-  color: #262626;
 }
 
 .sectionLink .sectionLink-Program .ul .ul__li .ul__li__li img {
@@ -414,25 +428,24 @@ body {
             align-items: center;
   }
   .sectionLink .sectionLink-Program {
-    margin-left: 0;
     margin-top: 61px;
   }
   .sectionLink .sectionLink-Program h2 {
     font-size: 32px;
   }
-  .sectionLink .sectionLink-Program ul {
+  .sectionLink .sectionLink-Program .ul {
     margin-top: 24px;
   }
-  .sectionLink .sectionLink-Program ul .ul__li {
+  .sectionLink .sectionLink-Program .ul .ul__li {
     font-size: 36px;
   }
-  .sectionLink .sectionLink-Program ul .ul__li--last {
+  .sectionLink .sectionLink-Program .ul .ul__li--last {
     margin-bottom: 0;
   }
-  .section--tickets {
+  .section__tickets {
     margin-top: 61px;
   }
-  .section--tickets h2 {
+  .section__tickets h2 {
     font-size: 32px;
   }
 }
@@ -454,13 +467,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .headerNav .haederUP h3 {
-    margin-left: 0;
-  }
-  .headerNav .haederUP .buttonHaederUP {
-    margin-right: 0;
-    margin-left: 80px;
-  }
   .headerNav .HeaderSection {
     text-align: center;
     -webkit-box-align: center;
@@ -468,42 +474,75 @@ body {
             align-items: center;
   }
   .headerNav .HeaderSection h1 {
-    margin-left: 0;
     margin-top: 30px;
   }
   .headerNav .HeaderSection p {
     margin-left: 0px;
     max-width: 220px;
   }
-  .headerNav .headerBottonBotton {
-    margin-left: 0;
+  .headerNav .header_BottonBotton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media (max-width: 483px) {
+  .headerNav .HeaderSection h1 {
+    font-size: 30px;
+  }
+  .sectionIformation article h2 {
+    font-size: 36px;
+  }
   .sectionLink .sectionLink-Program {
-    margin-left: 0;
     margin-top: 30px;
   }
   .sectionLink .sectionLink-Program h2 {
     font-size: 32px;
   }
-  .sectionLink .sectionLink-Program ul {
-    margin-top: 12px;
+  .sectionLink .sectionLink-Program .ul {
+    margin-top: 0px;
   }
-  .sectionLink .sectionLink-Program ul .ul__li {
+  .sectionLink .sectionLink-Program .ul .ul__li .ul__li__dot h4 {
     font-size: 20px;
   }
-  .section--tickets {
-    margin-right: 0;
-    margin-top: 62px;
+  .sectionLink .sectionLink-Program .ul .ul__li .ul__li__line .ul__li__li {
+    font-size: 15px;
   }
-  .section--tickets h2 {
+  .section__tickets {
+    margin-top: 30px;
+  }
+  .section__tickets h2 {
     font-size: 32px;
   }
-  .section--tickets input {
-    width: 240px;
-    margin-left: 120px;
+  .section__tickets form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section__tickets form .notificationName, .section__tickets form .notificationEmail, .section__tickets form .notificationPhone {
+    font-size: 20px;
+  }
+  .section__tickets form .section__input--one {
+    margin-top: 24px;
+  }
+  .section__tickets form input {
+    max-width: 240px;
+  }
+  .section__tickets form .div__checkbox .section__tickets--lable {
+    font-size: 11px;
+  }
+  .section__tickets form .section__tickets--button {
+    max-width: 240px;
   }
 }
 /*# sourceMappingURL=style.css.map */

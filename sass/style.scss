@@ -37,17 +37,26 @@ body{
       font-size: 48px;
       font-weight: bold;
     }
-    .buttonHaederUP{
-      border: none;
+    .haederUP__a{
       margin-top: 42px;
+      display: flex;
+      align-items: center;
+      //background-color: $buttonPri;
+      .buttonHaederUP{
+      // width: 132px;
+      // height: 48px;
+      // border: none;
+      //margin-top: 42px;
       padding: 12px 16px;
-      font-size: 16px;
+      // font-size: 16px;
       font-weight: bold;
       background: $buttonPri;
       color: $white;
       display: flex;
       align-items: center;
       text-align: center;
+      text-decoration: none;
+      }
       img{
         width: 24px;
         margin-right: 8px;
@@ -75,6 +84,7 @@ body{
       color: $white;
       margin-top: 16px;
       max-width: 540px;
+      
     }
   }
   .header_BottonBotton{
@@ -83,6 +93,7 @@ body{
     display: flex;
     justify-content: space-between;
     .header_BottonBotton__left{
+      margin-bottom: 174px;
       .headerBottonBotton{
         border: none;
         margin-top: 48px;
@@ -93,6 +104,7 @@ body{
         font-weight: bold;
         display: flex;
         align-items: center;
+        text-decoration: none;
         img{
           width: 24px;
           margin-right: 8px;
@@ -113,6 +125,7 @@ body{
   text-align: center;
   margin-top: 64px;
   justify-content: space-between;
+  margin: 0 auto;
   article{
     max-width: 298.73px;
     font-size: 16px;
@@ -165,6 +178,7 @@ body{
           flex-direction: row;
           align-items: center;
           font-family: 'Lora', serif;
+          color: $black;
           .line{
             margin-top: 17px;
             margin-left: 8px;
@@ -179,7 +193,7 @@ body{
           align-items: center;
           margin-top: 20px;
           font-size: 24px;
-          color: $black;
+          
           img{
             width: 24px;
             color: $black;
@@ -207,6 +221,7 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
+    
     .notificationName, .notificationEmail, .notificationPhone{
       font-size: 25px;
       font-weight: bold;
@@ -247,7 +262,6 @@ body{
       .section__tickets--checkbox{
         width: 18px;
         height: 18px;
-        
         margin-right: 8px;
       }
       .section__tickets--lable{
@@ -306,12 +320,11 @@ body{
     text-align: center;
     align-items: center;
     .sectionLink-Program{
-      margin-left: 0;
       margin-top: 61px;
       h2{
         font-size: 32px;
       }
-      ul{
+      .ul{
         margin-top: 24px;
         .ul__li{
           font-size: 36px;
@@ -322,7 +335,7 @@ body{
       }
     }
   }
-  .section--tickets{
+  .section__tickets{
     margin-top: 61px;
     h2{
       font-size: 32px;
@@ -338,20 +351,11 @@ body{
       text-align: center;
       align-items: center;
       justify-content: center;
-      h3{
-        margin-left: 0;
-        
-      }
-      .buttonHaederUP{
-        margin-right: 0;
-        margin-left: 80px;
-      }
     }
     .HeaderSection{
       text-align: center;
       align-items: center;
       h1{
-        margin-left: 0;
         margin-top: 30px;
       }
       p{
@@ -359,36 +363,82 @@ body{
         max-width: 220px;
       }
     }
-    .headerBottonBotton{
-      margin-left: 0;
+    .header_BottonBotton{
+      display: flex;
+      justify-content: center;
+      
     }
   }
 }
 @media (max-width:483px) {
+  .headerNav{
+    .HeaderSection{
+      h1{
+        font-size: 30px;
+      }
+    }
+  }
+  .sectionIformation{
+    article{
+      h2{
+        font-size: 36px;
+      }
+      
+    }
+  }
   .sectionLink{
     .sectionLink-Program{
-      margin-left: 0;
       margin-top: 30px;
       h2{
         font-size: 32px;
       }
-      ul{
-        margin-top: 12px;
+      .ul{
+        margin-top: 0px;
         .ul__li{
-          font-size: 20px;
+          .ul__li__dot{
+            h4{
+              font-size: 20px;
+            }
+          }
+          .ul__li__line{
+            .ul__li__li{
+              font-size: 15px;
+            }
+          }
         }
       }
     }
   }
-  .section--tickets{
-    margin-right: 0;
-    margin-top: 62px;
+  .section__tickets{
+    
+    margin-top: 30px;
     h2{
       font-size: 32px;
     }
-    input{
-      width: 240px;
-      margin-left: 120px;
+    form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .notificationName, .notificationEmail, .notificationPhone{
+        font-size: 20px;
+      }
+      
+      .section__input--one{
+        margin-top: 24px;
+      }
+      input{
+        max-width: 240px;
+      }
+      .div__checkbox{
+        //flex-direction: column;
+        .section__tickets--lable{
+          font-size: 11px;
+          
+        }
+      }
+      .section__tickets--button{
+        max-width: 240px;
+      }
     }
   }
 }
