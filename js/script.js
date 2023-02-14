@@ -4,8 +4,13 @@ const fullEmail = document.querySelector(".fullEmail");
 const fullPhone = document.querySelector(".fullPhone");
 
 const textEmail = document.querySelector("#text__email");
+const textPhone = document.querySelector("#text__phone")
+
+const buyTicket = document.getElementById("buyTicket");
+const buyTicket2 = document.getElementById("buyTicket2");
 
 let pattern = /^([a-z\d\.]+)@([a-z\d\-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
+
 
 
 const notificationName = document.querySelector(".notificationName");
@@ -23,8 +28,13 @@ form.addEventListener("submit", function(event){
     fullName.style.borderRadius = "5px"
     fullName.style.borderColor = "red"
     fullName.style.marginTop = "0"
-
+  } else{
+    notificationName.style.display = "none";
+    fullName.style.borderWidth = "1px"
+    fullName.style.borderColor = "grey"
+    fullName.style.marginTop = "24px"
   }
+
   if(fullEmail.value === ""){
     notificationEmail.style.display = "block"
     notificationEmail.style.marginTop = "24px"
@@ -33,7 +43,13 @@ form.addEventListener("submit", function(event){
     fullEmail.style.borderRadius = "5px"
     fullEmail.style.borderColor = "red"
     fullEmail.style.marginTop = "0"
+  }else{
+    notificationEmail.style.display = "none"
+    fullEmail.style.borderWidth = "1px"
+    fullEmail.style.borderColor = "grey"
+    fullEmail.style.marginTop = "24px"
   }
+
   if(fullPhone.value === ""){
     notificationPhone.style.display = "block"
     notificationPhone.style.marginTop = "24px"
@@ -42,8 +58,20 @@ form.addEventListener("submit", function(event){
     fullPhone.style.borderRadius = "5px"
     fullPhone.style.borderColor = "red"
     fullPhone.style.marginTop = "0"
+  }else{
+    notificationPhone.style.display = "none"
+    fullPhone.style.borderWidth = "1px"
+    fullPhone.style.borderColor = "grey"
+    fullPhone.style.marginTop = "24px"
   }
 })
+
+
+fullPhone.addEventListener('input', function(){
+  if(!/^\d+$/.test(fullPhone.value)){
+    fullPhone.value = fullPhone.value.slice(0,-1);
+  }
+});
 
 fullEmail.addEventListener("input", function(){
   let emailValue = fullEmail.value
@@ -70,3 +98,16 @@ fullEmail.addEventListener("input", function(){
     form.classList.remove("invalid")
   }
 })
+
+//***focus***/
+
+buyTicket.addEventListener('click', function(event){
+  event.preventDefault();
+  fullName.focus();
+})
+buyTicket2.addEventListener('click', function(event){
+  event.preventDefault();
+  fullName.focus();
+})
+
+

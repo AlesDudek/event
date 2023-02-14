@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -12,10 +11,9 @@ html {
 }
 
 body {
-  max-width: 1440px;
   height: 100vh;
   margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .HeaderSection, .headerBottonBotton, section {
@@ -24,107 +22,73 @@ body {
 }
 
 .headerNav {
-  background: radial-gradient(rgba(40, 38, 38, 0.332), #262525), url(../img/event.svg);
+  background: radial-gradient(rgba(40, 38, 38, 0.332), rgb(38, 37, 37)), url(../img/event.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .headerNav .haederUP {
   max-width: 1120px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .headerNav .haederUP h1 {
   color: #CC9933;
   margin-top: 42px;
   font-size: 48px;
   font-weight: bold;
 }
-
 .headerNav .haederUP .haederUP__a {
   margin-top: 42px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .headerNav .haederUP .haederUP__a .buttonHaederUP {
   padding: 12px 16px;
   font-weight: bold;
   background: #3F51F6;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   text-decoration: none;
 }
-
 .headerNav .haederUP .haederUP__a img {
   width: 24px;
   margin-right: 8px;
 }
-
 .headerNav .haederUP .buttonHaederUP:hover {
   cursor: pointer;
   background-color: #303FC8;
-  -webkit-transition: .2s all ease-in-out;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
-
 .headerNav .HeaderSection {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .headerNav .HeaderSection h1 {
   color: #fff;
   margin-top: 61px;
-  font-size: 38px;
+  font-size: 72px;
   min-width: 409px;
 }
-
 .headerNav .HeaderSection p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 16px;
   color: #fff;
   margin-top: 16px;
   max-width: 540px;
 }
-
 .headerNav .header_BottonBotton {
   max-width: 1120px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .headerNav .header_BottonBotton .header_BottonBotton__left {
   margin-bottom: 174px;
 }
-
 .headerNav .header_BottonBotton .header_BottonBotton__left .headerBottonBotton {
   border: none;
   margin-top: 48px;
@@ -133,162 +97,104 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: bold;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
 }
-
 .headerNav .header_BottonBotton .header_BottonBotton__left .headerBottonBotton img {
   width: 24px;
   margin-right: 8px;
 }
-
 .headerNav .header_BottonBotton .header_BottonBotton__left .headerBottonBotton:hover {
   cursor: pointer;
   background-color: #303FC8;
-  -webkit-transition: .2s all ease-in-out;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .sectionIformation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   margin-top: 64px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0 auto;
 }
-
 .sectionIformation article {
   max-width: 298.73px;
   font-size: 16px;
 }
-
 .sectionIformation article h2 {
   color: #CC9933;
   font-size: 64px;
 }
-
 .sectionIformation article p {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
 
 .sectionLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .sectionLink .ul__li--dot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .sectionLink .sectionLink-Program {
   margin-top: 122px;
 }
-
 .sectionLink .sectionLink-Program h2 {
   color: #CC9933;
   font-size: 64px;
 }
-
 .sectionLink .sectionLink-Program .ul {
   list-style: none;
 }
-
 .sectionLink .sectionLink-Program .ul .ul__li {
   color: #CC9933;
   margin-top: 48px;
   font-size: 36px;
 }
-
 .sectionLink .sectionLink-Program .ul .ul__li .ul__li__dot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
-
 .sectionLink .sectionLink-Program .ul .ul__li .ul__li__dot .dot {
   width: 20px;
   height: 20px;
   margin-right: 20px;
 }
-
 .sectionLink .sectionLink-Program .ul .ul__li .ul__li__dot h4 {
   font-size: 36px;
   font-weight: bold;
   color: #262626;
 }
-
 .sectionLink .sectionLink-Program .ul .ul__li .ul__li__line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Lora', serif;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Lora", serif;
   color: #262626;
 }
-
 .sectionLink .sectionLink-Program .ul .ul__li .ul__li__line .line {
   margin-top: 17px;
   margin-left: 8px;
   margin-right: 35px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 1px;
   height: 64px;
 }
-
 .sectionLink .sectionLink-Program .ul .ul__li .ul__li__li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 20px;
   font-size: 24px;
 }
-
 .sectionLink .sectionLink-Program .ul .ul__li .ul__li__li img {
   width: 24px;
   color: #262626;
   margin-right: 8px;
 }
-
 .sectionLink .sectionLink-Program .ul .ul__li--last {
   margin-bottom: 139px;
 }
@@ -296,86 +202,68 @@ body {
 .section__tickets {
   margin-top: 122px;
 }
-
 .section__tickets h2 {
   font-size: 64px;
   color: #CC9933;
 }
-
 .section__tickets form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
-
+.section__tickets form input {
+  font-family: "Lora", serif;
+}
 .section__tickets form .notificationName, .section__tickets form .notificationEmail, .section__tickets form .notificationPhone {
   font-size: 25px;
   font-weight: bold;
-  color: #ff0202;
+  color: rgb(255, 2, 2);
   background-color: #262626;
   display: none;
 }
-
-.section__tickets form p {
-  font-family: 'Lora', serif;
+.section__tickets form .nameInput {
+  display: none;
+  border: 6px solid red;
+  border-radius: 5px;
 }
-
+.section__tickets form p {
+  font-family: "Lora", serif;
+}
 .section__tickets form .notificationName {
   margin-top: 48px;
 }
-
 .section__tickets form input {
   width: 480px;
   height: 50px;
   padding: 16px;
 }
-
 .section__tickets form .section__input--one {
   margin-top: 48px;
 }
-
 .section__tickets form .section__input--two {
   margin-top: 24px;
 }
-
 .section__tickets form .section__input--three {
   margin-top: 24px;
 }
-
 .section__tickets form .section__tickets--checkbox:hover {
   cursor: pointer;
 }
-
 .section__tickets form .div__checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
   margin-top: 30px;
 }
-
 .section__tickets form .div__checkbox .section__tickets--checkbox {
   width: 18px;
   height: 18px;
   margin-right: 8px;
 }
-
 .section__tickets form .div__checkbox .section__tickets--lable .sanp--BB {
   border-bottom: 1px solid #000;
 }
-
 .section__tickets form .section__tickets--button {
   margin-top: 16px;
   width: 480px;
@@ -384,12 +272,10 @@ body {
   color: #fff;
   border: none;
 }
-
 .section__tickets form .section__tickets--button:hover {
   cursor: pointer;
   background-color: #303FC8;
-  -webkit-transition: .2s all ease-in-out;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 @media (max-width: 1165px) {
@@ -397,16 +283,10 @@ body {
     font-size: 25px;
   }
 }
-
 @media (max-width: 986px) {
   .sectionIformation {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .sectionIformation .section__article-one {
     margin-left: 0;
@@ -415,17 +295,10 @@ body {
     margin-right: 0;
   }
   .sectionLink {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .sectionLink .sectionLink-Program {
     margin-top: 61px;
@@ -449,29 +322,17 @@ body {
     font-size: 32px;
   }
 }
-
 @media (max-width: 715px) {
   .headerNav .haederUP {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .headerNav .HeaderSection {
     text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .headerNav .HeaderSection h1 {
     margin-top: 30px;
@@ -481,15 +342,10 @@ body {
     max-width: 220px;
   }
   .headerNav .header_BottonBotton {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 @media (max-width: 483px) {
   .headerNav .HeaderSection h1 {
     font-size: 30px;
@@ -519,15 +375,9 @@ body {
     font-size: 32px;
   }
   .section__tickets form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .section__tickets form .notificationName, .section__tickets form .notificationEmail, .section__tickets form .notificationPhone {
     font-size: 20px;
@@ -544,5 +394,4 @@ body {
   .section__tickets form .section__tickets--button {
     max-width: 240px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
