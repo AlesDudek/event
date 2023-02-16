@@ -66,15 +66,28 @@ form.addEventListener("submit", function(event){
   }
 })
 
-
-fullPhone.addEventListener('input', function(){
-  if(!/^\d+$/.test(fullPhone.value)){
-    fullPhone.value = fullPhone.value.slice(0,-1);
+fullName.addEventListener("input", function () {
+  let nameValue = fullName.value
+  if(nameValue !== ""){
+    notificationName.style.display = "none"
+    fullName.style.borderWidth = "1px"
+    fullName.style.borderStyle = "solid"
+    fullName.style.borderRadius = "5px"
+    fullName.style.borderColor = "grey"
+    fullName.style.marginTop = "48px"
   }
-});
+})
+
 
 fullEmail.addEventListener("input", function(){
   let emailValue = fullEmail.value
+  if(emailValue !== ""){
+    notificationEmail.style.display = "none";
+    fullEmail.style.borderWidth = "1px"
+    fullEmail.style.borderStyle = "solid"
+    fullEmail.style.borderRadius = "5px"
+    fullEmail.style.borderColor = "grey"
+  }
   if(emailValue.match(pattern)){
     textEmail.textContent = "Your email is correct"
     textEmail.style.color = "green"
@@ -98,6 +111,21 @@ fullEmail.addEventListener("input", function(){
     form.classList.remove("invalid")
   }
 })
+
+fullPhone.addEventListener('input', function(){
+  if(!/^\d+$/.test(fullPhone.value)){
+    fullPhone.value = fullPhone.value.slice(0,-1);
+  }
+  let phoneValue = fullPhone.value
+  if(phoneValue !== ""){
+    notificationPhone.style.display = "none"
+    fullPhone.style.borderWidth = "1px"
+    fullPhone.style.borderStyle = "solid"
+    fullPhone.style.borderRadius = "5px"
+    fullPhone.style.borderColor = "grey"
+    fullPhone.style.marginTop = "24px"
+  }
+});
 
 //***focus***/
 

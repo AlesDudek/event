@@ -1,6 +1,6 @@
 @import "variabels";
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@ body{
 }
 //************ header ********//
 .headerNav{
-  background: radial-gradient(rgba(40, 38, 38, 0.332),rgb(38, 37, 37)),url(../img/event.svg);
+  background: url(../img/bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -74,7 +74,7 @@ body{
     }
     p{
       font-family: 'Lora', serif;
-      font-size: 16px;
+      font-weight: 400;
       color: $white;
       margin-top: 16px;
       max-width: 540px;
@@ -122,10 +122,10 @@ body{
   margin: 0 auto;
   article{
     max-width: 298.73px;
-    font-size: 16px;
     h2{
       color: $yellow;
       font-size: 64px;
+      font-weight: 700;
     }
     p{
       font-family: 'Lora', serif;
@@ -274,6 +274,8 @@ body{
       }
     }
     .section__tickets--button{
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
       margin-top: 16px;
       width: 480px;
       height: 48px;
