@@ -15,28 +15,25 @@ body{
   margin: 0 auto;
   font-family: 'Poppins', sans-serif;
 }
-.HeaderSection, .headerBottonBotton, section{
+.HeaderSection,.haederUP, .headerBottomBottom, section{
   max-width: 1120px;
   margin: 0 auto;
 }
 //************ header ********//
 .headerNav{
-  background: url(../img/bg.svg);
+  background: url(../img/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   .haederUP{
-    max-width: 1120px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    h1{
-      
-      color: $yellow;
-      margin-top: 42px;
-      font-size: 48px;
-      font-weight: bold;
-    }
+      h1{
+        color: $yellow;
+        margin-top: 42px;
+        font-size: 48px;
+        font-weight: bold;
+      }
     .haederUP__a{
       margin-top: 42px;
       display: flex;
@@ -66,11 +63,13 @@ body{
     display: flex;
     flex-direction: column;
     h1{
-
+      white-space: nowrap;
       color: $white;
       margin-top: 61px;
       font-size: 72px;
       min-width: 409px;
+      transform: scale(0.7);
+      transform-origin: left;
     }
     p{
       font-family: 'Lora', serif;
@@ -81,14 +80,14 @@ body{
       
     }
   }
-  .header_BottonBotton{
+  .header_BottomBottom{
     max-width: 1120px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    .header_BottonBotton__left{
+    .header_BottomBottom__left{
       margin-bottom: 174px;
-      .headerBottonBotton{
+      .headerBottomBottom{
         border: none;
         margin-top: 48px;
         padding: 12px 16px;
@@ -104,7 +103,7 @@ body{
           margin-right: 8px;
         }
       }
-      .headerBottonBotton:hover{
+      .headerBottomBottom:hover{
         cursor: pointer;
         background-color: $buttonHover;
         transition: .2s all ease-in-out;
@@ -361,13 +360,14 @@ body{
       align-items: center;
       h1{
         margin-top: 30px;
+        transform-origin: center;
       }
       p{
         margin-left: 0px;
         max-width: 220px;
       }
     }
-    .header_BottonBotton{
+    .header_BottomBottom{
       display: flex;
       justify-content: center;
       
@@ -378,7 +378,9 @@ body{
   .headerNav{
     .HeaderSection{
       h1{
-        font-size: 30px;
+        font-size: 48px;
+        min-width: 300px;
+        
       }
     }
   }
