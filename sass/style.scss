@@ -121,6 +121,7 @@ body{
   margin: 0 auto;
   article{
     max-width: 298.73px;
+    margin-top: 67px;
     h2{
       color: $yellow;
       font-size: 64px;
@@ -216,6 +217,9 @@ body{
     text-align: center;
     input{
       font-family: 'Lora', serif;
+      width: 480px;
+      height: 50px;
+      padding: 16px;
     }
     .notificationName, .notificationEmail, .notificationPhone{
       font-size: 25px;
@@ -236,21 +240,15 @@ body{
     .notificationName{
       margin-top: 48px;
     }
-    input{
-    width: 480px;
-    height: 50px;
-    padding: 16px;
-    }
-    .section__input--one{
+    
+    .section__input--Name{
       margin-top: 48px;
     }
-    .section__input--two{
+    .section__input{
       margin-top: 24px;
 
     }
-    .section__input--three{
-      margin-top: 24px;
-    }
+    
     .section__tickets--checkbox:hover{
       cursor: pointer;
     }
@@ -310,12 +308,10 @@ body{
   .sectionIformation{
     display: flex;
     flex-direction: column;
-    .section__article-one{
+    .section__article{
       margin-left: 0;
     }
-    .section__article-three{
-      margin-right: 0;
-    }
+    
   }
   .sectionLink{
     display: flex;
@@ -429,7 +425,7 @@ body{
         font-size: 20px;
       }
       
-      .section__input--one{
+      .section__input--Name{
         margin-top: 24px;
       }
       input{

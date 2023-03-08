@@ -122,6 +122,7 @@ body {
 }
 .sectionIformation article {
   max-width: 298.73px;
+  margin-top: 67px;
 }
 .sectionIformation article h2 {
   color: #CC9933;
@@ -214,6 +215,9 @@ body {
 }
 .section__tickets form input {
   font-family: "Lora", serif;
+  width: 480px;
+  height: 50px;
+  padding: 16px;
 }
 .section__tickets form .notificationName, .section__tickets form .notificationEmail, .section__tickets form .notificationPhone {
   font-size: 25px;
@@ -233,18 +237,10 @@ body {
 .section__tickets form .notificationName {
   margin-top: 48px;
 }
-.section__tickets form input {
-  width: 480px;
-  height: 50px;
-  padding: 16px;
-}
-.section__tickets form .section__input--one {
+.section__tickets form .section__input--Name {
   margin-top: 48px;
 }
-.section__tickets form .section__input--two {
-  margin-top: 24px;
-}
-.section__tickets form .section__input--three {
+.section__tickets form .section__input {
   margin-top: 24px;
 }
 .section__tickets form .section__tickets--checkbox:hover {
@@ -291,11 +287,8 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .sectionIformation .section__article-one {
+  .sectionIformation .section__article {
     margin-left: 0;
-  }
-  .sectionIformation .section__article-three {
-    margin-right: 0;
   }
   .sectionLink {
     display: flex;
@@ -387,7 +380,7 @@ body {
   .section__tickets form .notificationName, .section__tickets form .notificationEmail, .section__tickets form .notificationPhone {
     font-size: 20px;
   }
-  .section__tickets form .section__input--one {
+  .section__tickets form .section__input--Name {
     margin-top: 24px;
   }
   .section__tickets form input {
